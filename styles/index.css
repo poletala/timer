@@ -4,9 +4,8 @@
 }
 body {
     background-color: black;
-}
-root {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     width: 100%;
     height: 100vh;
@@ -17,7 +16,7 @@ section {
     justify-content: center;
     margin-left:auto;
     margin-right: auto;
-    width: 304px;
+    width: 26%;
     height: 237px;
     gap: 10px;
 }
@@ -52,12 +51,16 @@ section {
 
 }
 .controls > button {
-    width: 64px;
-    height: 64px;
     border-radius: 50%;
     padding: 0;
-    border: none;
     background-size: cover;
+}
+.play,
+.newTimer,
+.speakerNone {
+    border: none;
+    width: 64px;
+    height: 64px;
 }
 .play {
     background: url(../assets/ph_play-circle.png) no-repeat rgba(36, 36, 36, 1);
@@ -70,4 +73,26 @@ section {
 }
 .controls > button:hover {
     border: 3px dotted #3a7999
+}
+.deleteTimer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(36, 36, 36, 1);
+    color: white;
+    font-size: 30px;
+    border: 4px solid #fff;
+    width: 55px;
+    height: 55px;
+    position: relative;
+    top: 5px
+}
+.switchMode {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 32px;
+    height: 32px;
+    background: url(../assets/ph_sun-bold.svg) no-repeat black;
+    border: none;
 }
